@@ -1,0 +1,111 @@
+/**
+ * Theme Name:  Munsa Child
+ * Theme URI:   https://foxland.fi/downloads/munsa/
+ * Description: Child theme of Munsa theme
+ * Version:     1.0.0
+ * Author:      Peter Arbaugh
+ * Author URI:  https://foxland.fi/
+ * Text Domain: munsa-child
+ * Domain Path: /languages/
+ * Tags:        white, light
+ * License:     GNU General Public License v2.0 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Template:    munsa
+ */
+ 
+/**
+ * Parent theme styles are loaded automatically. So there is no need to use @import rule.
+ *
+ * Animations via http://ianlunn.github.io/Hover/
+ * Includes Hollow and Underline from Center.
+ */
+
+.header-menu-container{
+    margin-top: 1rem;
+}
+
+.header-menu li{
+    display: inline-block;
+    text-decoration: none;
+    font-family: Montserrat,"Helvetica Neue",sans-serif;
+    margin: 0 .1rem;
+}
+
+.header-menu li a {
+    text-decoration: none;
+    padding: .3rem;
+}
+
+/* Underline From Center for first blocks */
+.header-menu li:not(:last-child) a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.header-menu li:not(:last-child) a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 3px;
+  background: #000;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.header-menu li:not(:last-child) a:hover:before, .header-menu li:not(:last-child) a:focus:before, .header-menu li:not(:last-child) a:active:before {
+  left: 0;
+  right: 0;
+}
+
+/* background fade transitions for last menu item */
+.header-menu li:last-child a {
+    background-color: #000;
+    color: #fff;
+    vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: background;
+  transition-property: background;
+  box-shadow: inset 0 0 0 2px #000, 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.header-menu li:last-child a:hover, .header-menu li:last-child a:focus, .header-menu li:last-child a:active{
+    color: #000;
+     background: none;
+}
+
+@media screen and (min-width: 60em) {
+    .site-branding{
+        width: 40%;
+        margin-left: 10%;
+        float: left;
+        text-align: left;
+    }
+
+    .header-menu-container{
+        width: 40%;
+        margin-right: 10%;
+        float: right;
+        text-align: right;
+        margin-top: 0;
+    }
+    
+    .header-menu li{
+        margin: .1rem;
+    }
+}
