@@ -1,15 +1,5 @@
-# Munsa Child
+# Munsa Child Theme (WordPress)
 
-Munsa Child is a blank child theme of [Munsa theme](https://foxland.fi/downloads/munsa/).
+Some simple edits to the excellent (and accessible) [Munsa by Sami Keijonen](https://foxland.fi/downloads/munsa/). Adds a header menu to the top of the page so visitors can skip an extra click to open the menu.  It also lets me surface the important links (like the one to the Japanese translations of my content.)
 
-## Copyright and License
-
-All other resources and theme elements are licensed under the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html), version 2 or later.
-
-2015 &copy; [Sami Keijonen](https://foxland.fi).
-
-## Changelog
-
-### Version 1.0.0
-
-* Everything's new!
+Animations are from Hover.css, available at http://ianlunn.github.io/Hover/.
